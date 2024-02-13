@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.cs4520.assignment1.R
 import com.cs4520.assignment1.databinding.FragmentLoginBinding
 
@@ -55,6 +56,7 @@ class LoginFragment : Fragment() {
                 if (loginResult.success) {
                     updateUiWithUser()
                     loginViewModel.reset()
+                    findNavController().navigate(R.id.action_loginFragment_to_productListFragment)
                 }
             })
 
