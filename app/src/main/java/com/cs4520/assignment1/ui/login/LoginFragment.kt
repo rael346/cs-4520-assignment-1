@@ -13,11 +13,6 @@ import androidx.navigation.fragment.findNavController
 import com.cs4520.assignment1.R
 import com.cs4520.assignment1.databinding.FragmentLoginBinding
 
-/**
- * A simple [Fragment] subclass.
- * Use the [LoginFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class LoginFragment : Fragment() {
     private lateinit var loginViewModel: LoginViewModel
     private var _binding: FragmentLoginBinding? = null

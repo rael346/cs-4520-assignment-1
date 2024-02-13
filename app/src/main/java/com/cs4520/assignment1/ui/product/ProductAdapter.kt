@@ -1,6 +1,5 @@
 package com.cs4520.assignment1.ui.product
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
